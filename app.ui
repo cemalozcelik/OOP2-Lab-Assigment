@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1180</width>
+    <height>746</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_window">
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_plot">
+        <item>
+         <widget class="QGroupBox" name="groupBox_input">
+          <property name="title">
+           <string>Source</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="input">
+             <property name="minimumSize">
+              <size>
+               <width>552</width>
+               <height>556</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../OOP2_LAB_Assigment/icons/save-file.png</pixmap>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_output">
+          <property name="title">
+           <string>Output</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="output">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>552</width>
+               <height>556</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../OOP2_LAB_Assigment/icons/save-file.png</pixmap>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_Menu">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item row="0" column="4" alignment="Qt::AlignBottom">
+         <widget class="QGroupBox" name="EdgeDetection">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Edge Detection</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QPushButton" name="pushButton_actionRoberts">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/roberts.png</normaloff>../OOP2_LAB_Assigment/icons/roberts.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionSobel">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/sobel.png</normaloff>../OOP2_LAB_Assigment/icons/sobel.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionScharr">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/scharr.png</normaloff>../OOP2_LAB_Assigment/icons/scharr.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionPrewitt">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/prewwit.png</normaloff>../OOP2_LAB_Assigment/icons/prewwit.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QGroupBox" name="Segmentation">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Segmentation</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QPushButton" name="pushButton_actionMulti_Otsu_Thresholding">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/otsu.png</normaloff>../OOP2_LAB_Assigment/icons/otsu.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionChan_Vese_Segmentation">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/khanom-chan.png</normaloff>../OOP2_LAB_Assigment/icons/khanom-chan.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionMorphological_Snakes">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/snake.png</normaloff>../OOP2_LAB_Assigment/icons/snake.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="Conversion">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Conversion</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="pushButton_actionRGB_to_Grayscale">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/grayscale.png</normaloff>../OOP2_LAB_Assigment/icons/grayscale.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionRGB_to_HSV">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/hsv.jpg</normaloff>../OOP2_LAB_Assigment/icons/hsv.jpg</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="Output">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Output</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPushButton" name="pushButton_actionSave_Output">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/save_output.png</normaloff>../OOP2_LAB_Assigment/icons/save_output.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionSave_As_Output">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/save_as_output.png</normaloff>../OOP2_LAB_Assigment/icons/save_as_output.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionOutput">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/jpg.png</normaloff>../OOP2_LAB_Assigment/icons/jpg.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionOutput_clear">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/clear.png</normaloff>../OOP2_LAB_Assigment/icons/clear.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionUndo_Output">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/undo.png</normaloff>../OOP2_LAB_Assigment/icons/undo.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionRedo_Output">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/redo.png</normaloff>../OOP2_LAB_Assigment/icons/redo.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="Source">
+          <property name="minimumSize">
+           <size>
+            <width>65</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>65</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>ArrowCursor</cursorShape>
+          </property>
+          <property name="title">
+           <string>Source</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButton_actionOpen_Source">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/open.png</normaloff>../OOP2_LAB_Assigment/icons/open.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionSource">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/jpg.png</normaloff>../OOP2_LAB_Assigment/icons/jpg.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_actionSource_clear">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../OOP2_LAB_Assigment/icons/clear.png</normaloff>../OOP2_LAB_Assigment/icons/clear.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1180</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuExport_As">
+     <property name="statusTip">
+      <string>Export As image.</string>
+     </property>
+     <property name="title">
+      <string>Export As</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../OOP2_LAB_Assigment/icons/export.png</normaloff>../OOP2_LAB_Assigment/icons/export.png</iconset>
+     </property>
+     <addaction name="actionExport_As_Source"/>
+     <addaction name="actionExport_As_Output"/>
+    </widget>
+    <addaction name="actionOpen_Source"/>
+    <addaction name="actionSave_Output"/>
+    <addaction name="actionSave_As_Output"/>
+    <addaction name="menuExport_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="statusTip">
+     <string>Edit</string>
+    </property>
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuClear">
+     <property name="statusTip">
+      <string>Clear Menu</string>
+     </property>
+     <property name="title">
+      <string>Clear</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../OOP2_LAB_Assigment/icons/clear.png</normaloff>../OOP2_LAB_Assigment/icons/clear.png</iconset>
+     </property>
+     <addaction name="actionSource_clear"/>
+     <addaction name="actionOutput_clear"/>
+    </widget>
+    <addaction name="menuClear"/>
+    <addaction name="actionUndo_Output"/>
+    <addaction name="actionRedo_Output"/>
+   </widget>
+   <widget class="QMenu" name="menuConversion">
+    <property name="title">
+     <string>Conversion</string>
+    </property>
+    <addaction name="actionRGB_to_Grayscale"/>
+    <addaction name="actionRGB_to_HSV"/>
+   </widget>
+   <widget class="QMenu" name="menuSegmentation">
+    <property name="title">
+     <string>Segmentation</string>
+    </property>
+    <addaction name="actionMulti_Otsu_Thresholding"/>
+    <addaction name="actionChan_Vese_Segmentation"/>
+    <addaction name="actionMorphological_Snakes"/>
+   </widget>
+   <widget class="QMenu" name="menuEdge_Detection">
+    <property name="title">
+     <string>Edge Detection</string>
+    </property>
+    <addaction name="actionRoberts"/>
+    <addaction name="actionSobel"/>
+    <addaction name="actionScharr"/>
+    <addaction name="actionPrewitt"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuConversion"/>
+   <addaction name="menuSegmentation"/>
+   <addaction name="menuEdge_Detection"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="statusTip">
+    <string>Status Bar</string>
+   </property>
+  </widget>
+  <action name="actionOpen_Source">
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/open.png</normaloff>../OOP2_LAB_Assigment/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Source</string>
+   </property>
+   <property name="statusTip">
+    <string>Open image.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave_Output">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/save_output.png</normaloff>../OOP2_LAB_Assigment/icons/save_output.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Output</string>
+   </property>
+   <property name="statusTip">
+    <string>Save image output.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/exit.png</normaloff>../OOP2_LAB_Assigment/icons/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit the app.</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F4</string>
+   </property>
+  </action>
+  <action name="actionExport_As_Source">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/jpg.png</normaloff>../OOP2_LAB_Assigment/icons/jpg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Source</string>
+   </property>
+   <property name="statusTip">
+    <string>Export as Source</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+I</string>
+   </property>
+  </action>
+  <action name="actionExport_As_Output">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/jpg.png</normaloff>../OOP2_LAB_Assigment/icons/jpg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Output</string>
+   </property>
+   <property name="statusTip">
+    <string>Export as Output</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="actionUndo_Output">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/undo.png</normaloff>../OOP2_LAB_Assigment/icons/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo Output</string>
+   </property>
+   <property name="statusTip">
+    <string>Undo Output image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo_Output">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/redo.png</normaloff>../OOP2_LAB_Assigment/icons/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo  Output</string>
+   </property>
+   <property name="statusTip">
+    <string>Redo Output image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionSource_clear">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/clear.png</normaloff>../OOP2_LAB_Assigment/icons/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Source</string>
+   </property>
+   <property name="statusTip">
+    <string>Clear source image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionOutput_clear">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/clear.png</normaloff>../OOP2_LAB_Assigment/icons/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Output</string>
+   </property>
+   <property name="statusTip">
+    <string>Clear output image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionRGB_to_Grayscale">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/grayscale.png</normaloff>../OOP2_LAB_Assigment/icons/grayscale.png</iconset>
+   </property>
+   <property name="text">
+    <string>RGB to Grayscale</string>
+   </property>
+   <property name="statusTip">
+    <string>Convert to grayscale the Source image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionRGB_to_HSV">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/hsv.jpg</normaloff>../OOP2_LAB_Assigment/icons/hsv.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>RGB to HSV</string>
+   </property>
+   <property name="statusTip">
+    <string>Convert to hsv the Source image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionMulti_Otsu_Thresholding">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/otsu.png</normaloff>../OOP2_LAB_Assigment/icons/otsu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Multi-Otsu Thresholding</string>
+   </property>
+   <property name="statusTip">
+    <string>Apply multi otsu thresholding to the image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="actionChan_Vese_Segmentation">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/khanom-chan.png</normaloff>../OOP2_LAB_Assigment/icons/khanom-chan.png</iconset>
+   </property>
+   <property name="text">
+    <string>Chan-Vese Segmentation</string>
+   </property>
+   <property name="statusTip">
+    <string>Apply Chan Vese Segmentation to the image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="actionMorphological_Snakes">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/snake.png</normaloff>../OOP2_LAB_Assigment/icons/snake.png</iconset>
+   </property>
+   <property name="text">
+    <string>Morphological Snakes</string>
+   </property>
+   <property name="statusTip">
+    <string>Apply Morphological Snakes to the image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionRoberts">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/roberts.png</normaloff>../OOP2_LAB_Assigment/icons/roberts.png</iconset>
+   </property>
+   <property name="text">
+    <string>Roberts</string>
+   </property>
+   <property name="statusTip">
+    <string>Edge detection : Roberts </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSobel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/sobel.png</normaloff>../OOP2_LAB_Assigment/icons/sobel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobel</string>
+   </property>
+   <property name="statusTip">
+    <string>Edge detection : Sobel </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionScharr">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/scharr.png</normaloff>../OOP2_LAB_Assigment/icons/scharr.png</iconset>
+   </property>
+   <property name="text">
+    <string>Scharr</string>
+   </property>
+   <property name="statusTip">
+    <string>Edge detection : Scharr </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Ğ</string>
+   </property>
+  </action>
+  <action name="actionPrewitt">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/prewwit.png</normaloff>../OOP2_LAB_Assigment/icons/prewwit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Prewitt</string>
+   </property>
+   <property name="statusTip">
+    <string>Edge detection : Prewitt </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Ü</string>
+   </property>
+  </action>
+  <action name="actionSave_As_Output">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../OOP2_LAB_Assigment/icons/save_as_output.png</normaloff>../OOP2_LAB_Assigment/icons/save_as_output.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As Output</string>
+   </property>
+   <property name="statusTip">
+    <string>Save image as output.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
